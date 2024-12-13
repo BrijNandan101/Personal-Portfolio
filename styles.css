@@ -278,13 +278,13 @@ section.active{
   text-align: left; /* Align text to the left */
   min-width: 10rem; /* Optional: ensures consistent width for all items */
   max-width: 11rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin-left: 5rem;
+  margin-right: 10rem;
 }
 
 .home-about div h2 {
   font-family: "Doto", sans-serif;
-  font-size: 3.5rem; /* Adjust as needed */
+  font-size: 5rem; /* Adjust as needed */
   color: rgb(182, 174, 174); /* Optional: Highlight the number */
 }
 
@@ -297,7 +297,7 @@ section.active{
 }
 
 .counter {
-  font-size: 2.5rem; /* Font size for the numbers */
+  font-size: 5rem; /* Font size for the numbers */
   font-weight: bold;
   color: var(--main-color);
   text-align: center;
@@ -306,13 +306,13 @@ section.active{
 }
 
 .home-about .code .counter {
-  font-size: 3.5rem; /* Font size for the counter */
+  font-size: 5rem; /* Font size for the counter */
   font-weight: bold;
   text-align: center;
-  width: 5rem; /* Fixed width for the counter */
-  min-width: 5rem; /* Ensure it doesn't shrink */
+  width: 4rem; /* Fixed width for the counter */
+  min-width: 4rem; /* Ensure it doesn't shrink */
   /* overflow: hidden; Hide overflow if necessary */
-  padding-inline: 8rem;
+  padding-inline: 12rem;
   margin-left: -10rem;
   justify-content: space-between;
 }
@@ -811,6 +811,28 @@ section.active{
     gap: 2rem;
     font-size: 4rem;
   }
+  .home-about div {
+    display: flex; /* Enable Flexbox for the individual divs */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Align content to the start */
+    gap: 4rem; /* Add spacing between the <h2> and <p> */
+    padding: 1rem; /* Optional: padding for spacing */
+    border-radius: 1rem; /* Optional: rounded corners */
+    text-align: left; /* Align text to the left */
+    min-width: 10rem; /* Optional: ensures consistent width for all items */
+    max-width: 11rem;
+    margin-left: 4rem;
+    margin-right: 8rem;
+  }
+  .home-about .counter{
+    font-size: 4rem;
+  }
+  .home-about .code .counter{
+    font-size:  4rem; 
+    padding-inline: 8rem;
+    margin-left: 1rem;
+  }
+
 
 }
 
