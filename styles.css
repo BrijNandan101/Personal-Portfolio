@@ -173,50 +173,18 @@ body:hover section, body:hover .resume, body:hover .projects, body:hover .contac
   min-height: 3.5rem; /* Reserve space for typewriter text */
   display: block;
 }
-
-.home-detail h2 span {
-  position: static;
-  color: var(--main-color);
-  -webkit-text-stroke: 0;
-  margin-left: 0;
-  animation: none;
-}
-
-@keyframes display-text {
-
-  0%,
-  100% {
-    opacity: 0;
-  }
-
-  5%,
-  33% {
-    opacity: 1;
-  }
-
-  34%,
-  99% {
-    opacity: 0;
-  }
-}
-
-
-
 .home-detail h2 #typewriter {
+  color: var(--main-color);
   border-right: 2px solid var(--main-color);
   padding-right: 9px;
   animation: blink-caret 0.7s steps(1) infinite;
   display: inline-block;
-  min-width: 20px; /* Adjust as needed for your longest word */
+  min-width: 20px;
 }
-
 @keyframes blink-caret {
-
-  0%,
-  100% {
+  0%, 100% {
     border-color: var(--main-color);
   }
-
   50% {
     border-color: transparent;
   }
@@ -565,9 +533,9 @@ body.light-theme .home-img .img-box .img-item img {
 .cert-card {
   flex: 0 0 auto;
   scroll-snap-align: start;
-  background: rgba(31, 36, 45, 0.85);
+  background: rgba(105, 106, 109, 0.432);
   backdrop-filter: blur(4px);
-  border: 2px solid rgba(124, 240, 61, 0.18);
+  border: 2px solid rgba(61, 198, 240, 0.18);
   border-radius: 1.5rem;
   padding: 2.5rem 2rem 2rem 2rem;
   width: 100%;
