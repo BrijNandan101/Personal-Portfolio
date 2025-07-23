@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- =====================
+       1. Head & Meta
+       ===================== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developer Portfolio</title>
@@ -8,279 +11,357 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- =====================
+       2. Header & Navigation
+       ===================== -->
   <header>
     <a href="#" class="logo">Portfolio.</a>
-    
+    <button id="theme-toggle" aria-label="Toggle dark/light mode"><i class='bx bx-moon'></i></button>
     <i class='bx bx-menu' id="menu-icon"></i>
-
     <nav>
       <a href="#" class="active">Home</a>
-      <a href="#">Services</a>
+      <a href="#">Certifications</a>
       <a href="#">About</a>
       <a href="#">Projects</a>
       <a href="#">Contact</a>
     </nav>
   </header>
 
+  <!-- =====================
+       3. Home Section
+       ===================== -->
   <section class="home active">
     <div class="home-detail">
-      <h1>Brij Nandan</h1>
-        <h2>I'm a 
-          <span style="--i:4" data-text="Coder">Coder</span>
-          <span style="--i:3" data-text="Frontend Developer">Frontend Developer</span>
-          <span style="--i:2" data-text="UI/UX Designer">UI/UX Designer</span>
-        </h2>
-       <p>As a dedicated developer, I focus on building user-centered solutions and continuously enhancing my skills to contribute
-         to innovative projects that drive progress and growth.
-      </p>
-      <div class="btn-sci">
-        <a href="#" class="btn" >Download CV</a>
-        <div class="sci">
-          <a href="https://github.com/BrijNandan101"><i class='bx bxl-github'></i></a>
-          <a href="https://www.linkedin.com/in/brij-nandan-99a392313/"><i class='bx bxl-linkedin'></i></a>
+      <h1 class="reveal">Brij Nandan</h1>
+      <h2 class="reveal">I'm a <span id='typewriter'></span></h2>
+      
+      <div class="btn-sci reveal">
+        <div><a href="assets/ResumePlain.pdf" class="btn" download> Resume </a></div>
+        <div class="sci" style="display:flex;gap:1.2rem;">
+          <div><a href="https://github.com/BrijNandan101"><i class='bx bxl-github'></i></a></div>
+          <div><a href="https://www.linkedin.com/in/brij-nandan-99a392313/" ><i class='bx bxl-linkedin'></i></a></div>
         </div>
+      </div>
+      <div class="button-container">
+        <div class="button-container-item"><a href="https://leetcode.com/BrijNandan101/" class="btn profile-btn" target="_blank" rel="noopener"><i class='bx bx-code-alt' style="margin-right:0.5rem;"></i>LeetCode</a></div>
+        <div class="button-container-item"><a href="https://www.hackerrank.com/Brij14nandan99" class="btn profile-btn" target="_blank" rel="noopener"><i class='bx bx-trophy' style="margin-right:0.5rem;"></i>HackerRank</a></div>
       </div>
     </div>
     <div class="home-img">
       <div class="img-box">
         <div class="img-item">
-          <img src="assets/WhatsApp Image 2024-11-20 at 6.47.33 PM.jpeg" alt="">
+          <img src="assets\profpic.jpeg" alt="Profile Photo">
         </div>
       </div>
     </div>
     <div class="home-about">
-        <div class="exp">
-          <h2 data-target="2" class="counter">0</h2>
-          <p>Years of experience</p>
-        </div>
-        <div class="pro">
-          <h2 data-target="5" class="counter">0</h2>
-          <p>Projects completed</p>
-        </div>
-        <div class="tech">
-          <h2 data-target="7" class="counter">0</h2>
-          <p>Technologies mastered</p>
-        </div>
-        <div class="code">
-          <h2 data-target="100" class="counter">0</h2>
-          <p>Problems solved</p>
-        </div>
-    </div>
-  </section>
-
-  <section class="services">
-    <h2 class="heading">My <span>Services</span></h2>
-    <div class="services-container">
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-code-alt"></i>
-            <a href="#"><i class='bx bx-arrow-back'></i></a>
-        </div>
-        <h3>Web Development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque! Culpa, eligendi voluptatibus eveniet</p>
+      <div class="exp reveal">
+        <h2 data-target="2" class="counter">0</h2>
+        <p>Years of experience</p>
       </div>
-
-      <div class="services-box">
-        <div class="icon">
-          <i class='bx bxs-paint'></i>
-            <a href="#"><i class='bx bx-arrow-back'></i></a>
-        </div>
-        <h3>UI/UX Design</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque! Culpa, eligendi voluptatibus eveniet</p>
+      <div class="pro reveal">
+        <h2 data-target="5" class="counter">0</h2>
+        <p>Projects completed</p>
       </div>
-
-      <div class="services-box">
-        <div class="icon">
-          <i class='bx bx-palette' ></i>
-            <a href="#"><i class='bx bx-arrow-back'></i></a>
-        </div>
-        <h3>Graphic Design</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque! Culpa, eligendi voluptatibus eveniet</p>
+      <div class="tech reveal">
+        <h2 data-target="7" class="counter">0</h2>
+        <p>Technologies mastered</p>
       </div>
-
-      <div class="services-box">
-        <div class="icon">
-          <i class='bx bxs-videos' ></i>
-            <a href="#"><i class='bx bx-arrow-back'></i></a>
-        </div>
-        <h3>Video Editing</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, doloremque! Culpa, eligendi voluptatibus eveniet</p>
+      <div class="code reveal">
+        <h2 data-target="100" class="counter">0</h2>
+        <p>Problems solved</p>
       </div>
     </div>
   </section>
 
-  <section class="resume">
-    <div class="resume-container">
-      <div class="resume-box">
-        <h2>Why Hire Me?</h2>
-        <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error reiciendis doloribus</p>
-        <button class="resume-btn active">Experience</button>
-        <button class="resume-btn">Education</button>
-        <button class="resume-btn">Skills</button>
-        <button class="resume-btn">About Me</button>
+  <!-- =====================
+       4. Certifications Section
+       ===================== -->
+  <section class="certifications reveal" id="certifications">
+    <h2 class="heading reveal">My <span>Certifications</span></h2>
+    <p class="desc reveal" style="text-align:center; color:var(--white-color); margin-bottom:2rem; font-size:1.3rem;">A selection of my most relevant certifications, demonstrating my commitment to continuous learning and professional growth.</p>
+    <div class="certifications-scroll">
+      <!-- Each cert-card is a certification -->
+      <div class="cert-card reveal">
+        <img src="assets\mern.jpeg" alt="MERN FULL STACK">
+        <h3 class="reveal">MERN FULL STACK</h3>
+        <p class="reveal">Vital Skills</p>
       </div>
-      <div class="resume-box">
-        <div class="resume-detail experience active">
-          <h2 class="heading">
+      <div class="cert-card reveal">
+        <img src="assets\pybasic.jpeg" alt="Python Basics">
+        <h3 class="reveal">Python Basics</h3>
+        <p class="reveal">HackerRank</p>
+      </div>
+      <div class="cert-card reveal">
+        <img src="assets/problemsolving.png" alt="Problem Solving Basics">
+        <h3 class="reveal">Problem Solving Basics</h3>
+        <p class="reveal">HackerRank</p>
+      </div>
+      <div class="cert-card reveal">
+        <img src="assets\coreja.jpeg" alt="Core Java">
+        <h3 class="reveal">Core Java</h3>
+        <p class="reveal">Internshala</p>
+      </div>
+      <div class="cert-card reveal">
+        <img src="assets\iot.jpeg" alt="IoT">
+        <h3 class="reveal">IoT</h3>
+        <p class="reveal">UGI</p>
+      </div>
+      <div class="cert-card reveal">
+        <img src="assets\saas.jpeg" alt="Advance Embedded">
+        <h3 class="reveal">Advance Embedded</h3>
+        <p class="reveal">UGI</p>
+      </div>
+      <div class="cert-card reveal">
+        <img src="assets/bootcamp.jpeg" alt="Python Bootcamp">
+        <h3 class="reveal">Python Bootcamp</h3>
+        <p class="reveal">Udemy</p>
+      </div>
+      <div class="cert-card reveal">
+        <img src="assets/acce.jpeg" alt="Accenture Software Developer Simulation">
+        <h3 class="reveal">Accenture Software Developer Simulation</h3>
+        <p class="reveal">Accenture</p>
+      </div>
+      <div class="cert-card reveal">
+        <img src="assets/deloi.jpeg" alt="Deloitte Technology Simulation">
+        <h3 class="reveal">Deloitte Technology Simulation</h3>
+        <p class="reveal">Deloitte</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- =====================
+       5. Resume Section
+       ===================== -->
+  <section class="resume reveal">
+    <div class="resume-container reveal">
+      <div class="resume-box reveal">
+        <h2 class="reveal">Why Hire Me?</h2>
+        <p class="desc reveal">I am a dedicated developer with a passion for building user-centered solutions and continuously enhancing my skills to contribute to innovative projects that drive progress and growth.</p>
+        <button class="resume-btn active reveal">Experience</button>
+        <button class="resume-btn reveal">Education</button>
+        <button class="resume-btn reveal">Skills</button>
+        <button class="resume-btn reveal">About Me</button>
+      </div>
+      <div class="resume-box reveal">
+        <!-- Experience Tab -->
+        <div class="resume-detail experience active reveal">
+          <h2 class="heading reveal">
             My <span>Experience</span>
           </h2>
-          <p class="desc"></p>
-          <div class="resume-list">
-            <div class="resume-item">
-              <p class="year">2023-Present</p>
-              <h3>Frontend Developer</h3>
+          <p class="desc reveal"></p>
+          <div class="resume-list reveal">
+            <div class="resume-item reveal">
+              <p class="year reveal">2025-Present</p>
+              <h3 class="reveal">Python Developer Developer</h3>
               <!-- <p class="company"></p>for further use -->
-               <p></p>
+               <p class="reveal"></p>
             </div>
-
-            <div class="resume-item">
-              <p class="year">2024-Present</p>
-              <h3>Full Stack Developer</h3>
+            <div class="resume-item reveal">
+              <p class="year reveal">2024-Present</p>
+              <h3 class="reveal">Full Stack Developer</h3>
               <!-- <p class="company"></p>for further use -->
-               <p></p>
+               <p class="reveal"></p>
             </div>
-
-            <div class="resume-item">
-              <p class="year">2024-Present</p>
-              <h3>UI/UX Designer</h3>
+            <div class="resume-item reveal">
+              <p class="year reveal">2024-Present</p>
+              <h3 class="reveal">UI/UX Designer</h3>
               <!-- <p class="company"></p>for further use -->
-               <p></p>
+               <p class="reveal"></p>
             </div>
-
-            <div class="resume-item">
-              <p class="year">2021-2022</p>
-              <h3>Freelancer</h3>
+            <div class="resume-item reveal">
+              <p class="year reveal">2021-2022</p>
+              <h3 class="reveal">Freelancer</h3>
               <!-- <p class="company"></p>for further use -->
-               <p></p>
+               <p class="reveal"></p>
             </div>
-
-            <!-- <div class="resume-item">
-              <p class="year">2023-Present</p>
-              <h3>Frontend Developer</h3>
-              <p class="company"></p>for further use 
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, aspernatur?</p>
-            </div> -->
           </div>
         </div>
-        <div class="resume-detail education">
-          <h2 class="heading">
+        <!-- Education Tab -->
+        <div class="resume-detail education reveal">
+          <h2 class="heading reveal">
             My <span>Education</span>
           </h2>
-          <p class="desc"></p>
-          <div class="resume-list">
-            <div class="resume-item">
-              <p class="year">2022-Present</p>
-              <h3>B.Tech(Electronics and Communication)</h3>
-              <p class="company">United College of Engineering and Research</p>
-              <p>7.9 Sgpa till 3rd Sem</p>
+          <p class="desc reveal"></p>
+          <div class="resume-list reveal">
+            <div class="resume-item reveal">
+              <p class="year reveal">2022-Present</p>
+              <h3 class="reveal">B.Tech(Electronics and Communication)</h3>
+              <p class="company reveal">United College of Engineering and Research</p>
+              <p class="reveal">7.9 Sgpa till 3rd Sem</p>
             </div>
-            <div class="resume-item">
-              <p class="year">2020-2021</p>
-              <h3>Intermediate</h3>
-              <p class="company">Shree Mahaprabhu Public School(NIOS)</p>
-              <p>Pased with 74%</p>
+            <div class="resume-item reveal">
+              <p class="year reveal">2020-2021</p>
+              <h3 class="reveal">Intermediate</h3>
+              <p class="company reveal">Shree Mahaprabhu Public School(NIOS)</p>
+              <p class="reveal">Pased with 74%</p>
             </div>
-            <div class="resume-item">
-              <p class="year">2018-2019</p>
-              <h3>HighSchool</h3>
-              <p class="company">BBS Vidya Mandir(CBSE)</p>
-              <p>Pased with 70%</p>
+            <div class="resume-item reveal">
+              <p class="year reveal">2018-2019</p>
+              <h3 class="reveal">HighSchool</h3>
+              <p class="company reveal">BBS Vidya Mandir(CBSE)</p>
+              <p class="reveal">Pased with 70%</p>
             </div>
           </div>
         </div>
-        <div class="resume-detail skills">
-          <h2 class="heading">
+        <!-- Skills Tab -->
+        <div class="resume-detail skills reveal">
+          <h2 class="heading reveal">
             My <span>Skills</span>
           </h2>
-          <p class="desc"></p>
-          <div class="resume-list">
-            <div class="resume-item">
-              <i class='bx bxl-html5'></i>
-              <span>HTML5</span>
+          <p class="desc reveal"></p>
+          <div class="resume-list reveal">
+            <!-- Each resume-item is a skill -->
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='90' data-level='Expert'></div>
+                <div class='skill-percent-box reveal'>90%</div>
+                <i class='bx bxl-python'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bxl-css3' ></i>
-              <span>CSS3</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='85' data-level='Advance'></div>
+                <div class='skill-percent-box reveal'>85%</div>
+                <i class='bx bxl-c-plus-plus'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bxl-javascript' ></i>
-              <span>JavaScript</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='80' data-level='Advance'></div>
+                <div class='skill-percent-box reveal'>80%</div>
+                <i class='bx bxl-javascript'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bxl-react' ></i>
-              <span>React.js</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='75' data-level='Intermediate'></div>
+                <div class='skill-percent-box reveal'>75%</div>
+                <i class='bx bx-data'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bxl-c-plus-plus' ></i>
-              <span>c++</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='80' data-level='Advance'></div>
+                <div class='skill-percent-box reveal'>80%</div>
+                <i class='bx bx-data'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bxl-python' ></i>
-              <span>Python</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='85' data-level='Advance'></div>
+                <div class='skill-percent-box reveal'>85%</div>
+                <i class='bx bxl-react'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bx-sitemap'></i>
-              <span>DSA</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='75' data-level='Intermediate'></div>
+                <div class='skill-percent-box reveal'>75%</div>
+                <i class='bx bxl-nodejs'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bx-data' ></i>
-              <span>DBMS</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='70' data-level='Intermediate'></div>
+                <div class='skill-percent-box reveal'>70%</div>
+                <i class='bx bxl-flask'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bxl-github' ></i>
-              <span>GitHub</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='70' data-level='Intermediate'></div>
+                <div class='skill-percent-box reveal'>70%</div>
+                <i class='bx bxl-django'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bxl-git' ></i>
-              <span>Git</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='95' data-level='Expert'></div>
+                <div class='skill-percent-box reveal'>95%</div>
+                <i class='bx bxl-html5'></i>
+              </div>
             </div>
-            <div class="resume-item">
-              <i class='bx bxl-flutter' ></i>
-              <span>Flutter</span>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='90' data-level='Advance'></div>
+                <div class='skill-percent-box reveal'>90%</div>
+                <i class='bx bxl-css3'></i>
+              </div>
+            </div>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='75' data-level='Intermediate'></div>
+                <div class='skill-percent-box reveal'>75%</div>
+                <i class='bx bx-terminal'></i>
+              </div>
+            </div>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='85' data-level='Advance'></div>
+                <div class='skill-percent-box reveal'>85%</div>
+                <i class='bx bxl-github'></i>
+              </div>
+            </div>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='80' data-level='Advance'></div>
+                <div class='skill-percent-box reveal'>80%</div>
+                <i class='bx bx-sitemap'></i>
+              </div>
+            </div>
+            <div class="resume-item reveal">
+              <div class="skill-flex reveal">
+                <div class='skill-progress' data-skill='80' data-level='Advance'></div>
+                <div class='skill-percent-box reveal'>80%</div>
+                <i class='bx bx-git-branch'></i>
+              </div>
             </div>
           </div>
         </div>
-        <div class="resume-detail about">
-          <h2 class="heading">
+        <!-- About Tab -->
+        <div class="resume-detail about reveal">
+          <h2 class="heading reveal">
             About <span>Me</span>
           </h2>
-          <p class="desc"></p>
-          <div class="resume-list">
-            <div class="resume-item">
-              <p>Name<span>Brij Nandan</span></p>
+          <p class="desc reveal"></p>
+          <div class="resume-list reveal">
+            <!-- Each resume-item is an about field -->
+            <div class="resume-item reveal">
+              <p>Name   :  <span>Brij Nandan</span></p>
             </div>
-            <div class="resume-item">
-              <p>Gender<span>Male</span></p>
+            <div class="resume-item reveal">
+              <p>Gender   :  <span>Male</span></p>
             </div>
-            <div class="resume-item">
-              <p>Age<span>20years</span></p>
+            <div class="resume-item reveal">
+              <p>Age   :  <span>20years</span></p>
             </div>
-            <div class="resume-item">
-              <p>Status<span>Unmarried</span></p>
+            <div class="resume-item reveal">
+              <p>Status   :  <span>Unmarried</span></p>
             </div>
-            <div class="resume-item">
-              <p>City<span>Prayagraj</span></p>
+            <div class="resume-item reveal">
+              <p>City   :  <span>Prayagraj</span></p>
             </div>
-            <div class="resume-item">
-              <p>Nationality<span>Indian</span></p>
+            <div class="resume-item reveal">
+              <p>Nationality   :  <span>Indian</span></p>
             </div>
-            <div class="resume-item">
-              <p>Experience<span>Fresher</span></p>
+            <div class="resume-item reveal">
+              <p>Experience   :   <span>Fresher</span></p>
             </div>
-            <div class="resume-item">
-              <p>Full Time<span>Available</span></p>
+            <div class="resume-item reveal">
+              <p>Full Time   :   <span>Available</span></p>
             </div>
-            <div class="resume-item">
-              <p>Freelance<span>Available</span></p>
+            <div class="resume-item reveal">
+              <p>Freelance   :  <span>Available</span></p>
             </div>
-            <div class="resume-item">
-              <p>Email<span>Brij14nandan99@gmail.com</span></p>
+            <div class="resume-item reveal">
+              <p>Email   :  <span>Brij14nandan99@gmail.com</span></p>
             </div>
-            <div class="resume-item">
-              <p>Languages<span>English,French,Hindi</span></p>
+            <div class="resume-item reveal">
+              <p>Languages   :  <span>English,French,Hindi</span></p>
             </div>
-            <div class="resume-item">
-              <p>Phone<span>(+91) 94**5**5*7</span></p>
+            <div class="resume-item reveal">
+              <p>Phone   :  <span>(+91) 94**5**5*7</span></p>
             </div>
           </div>
         </div>
@@ -288,151 +369,262 @@
     </div>
   </section>
 
-  <section class="projects">
-    <h2 class="heading">Latest <span>Projects</span></h2>
-    <div class="projects-container">
-      <div class="projects-box">
-        <div class="projects-details active">
-          <p class="numb">01</p>
-          <h3>Portfolio Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quaerat!</p>
-          <div class="tech">
-            <p>HTML5, CS3, JavaScript</p>
+  <!-- =====================
+       6. Projects Section
+       ===================== -->
+  <section class="projects reveal">
+    <h2 class="heading reveal">Latest <span>Projects</span></h2>
+    <div class="projects-container reveal">
+      <div class="projects-box reveal">
+        <!-- Project Details List -->
+        <div class="projects-details active reveal">
+          <p class="numb reveal">01</p>
+          <h3 class="reveal">Personal Portfolio</h3>
+          <p class="reveal">Designed and developed a fully responsive personal 
+            portfolio website to showcase my technical skills, projects, certifications,
+             and contact information. Built using React.js and styled with Tailwind CSS, the site
+              features smooth navigation, clean UI, and optimized performance across devices.
+               It reflects my passion for full-stack development and serves as a central hub for
+                recruiters and collaborators to explore my work. Deployed the website using Netlify
+                 with continuous integration via GitHub.</p>
+          <div class="tech reveal">
+            <p class="reveal">HTML5, CSS3, JavaScript</p>
           </div>
-          <div class="live-github">
-            <a href="https://portfoliobrij.netlify.app/"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-            <a href="https://github.com/BrijNandan101/Personal-Portfolio.git"><i class='bx bxl-github' ></i><span>GitHub Repository</span></a>
-          </div>
-        </div>
-        <div class="projects-details">
-          <p class="numb">02</p>
-          <h3>Humidity and Temperature Monitoring Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quaerat!</p>
-          <div class="tech">
-            <p>Arduino IDE, NODEMCU ESP8266, DHT11</p>
-          </div>
-          <div class="live-github">
+          <div class="live-github reveal">
             <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-            <a href="#"><i class='bx bxl-github' ></i><span>GitHub Repository</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
           </div>
         </div>
-        <div class="projects-details">
-          <p class="numb">03</p>
-          <h3>Banking Web App Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quaerat!</p>
-          <div class="tech">
-            <p>JavaScript, Next Js, TailWind</p>
+        <div class="projects-details reveal">
+          <p class="numb reveal">02</p>
+          <h3 class="reveal">Document Forgery Detector</h3>
+          <p class="reveal">Developed a full-stack AI-powered system to detect forged or 
+            manipulated documents using computer vision and deep learning. The application
+             accepts scanned document images (e.g., certificates, IDs), analyzes inconsistencies
+              using pre-trained models, and highlights suspicious regions for review.
+               Built using React.js for the frontend and FastAPI for the backend, with
+                integration of TensorFlow-based models for forgery detection. The system
+                 generates a downloadable report and logs analysis results in a MongoDB database.
+                  This project demonstrates my ability to integrate AI with real-world applications
+                   using scalable web technologies.</p>
+          <div class="tech reveal">
+            <p class="reveal">Python, OpenCV, React.js, FastAPI, MongoDB</p>
           </div>
-          <div class="live-github">
+          <div class="live-github reveal">
             <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-            <a href="#"><i class='bx bxl-github' ></i><span>GitHub Repository</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
           </div>
         </div>
-        <div class="projects-details">
-          <p class="numb">04</p>
-          <h3>Portfolio Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quaerat!</p>
-          <div class="tech">
-            <p>HTML5, CS3, JavaScript</p>
+        <div class="projects-details reveal">
+          <p class="numb reveal">03</p>
+          <h3 class="reveal">Humidity and Temperature Monitoring System</h3>
+          <p class="reveal">Developed an IoT-based system for real-time monitoring of humidity and temperature
+             using sensors. The system uses NodeMCU microcontroller, DHT11 sensor, and Blynk app
+              for data visualization and remote monitoring. The project demonstrates my ability to
+               integrate hardware with software, implement IoT solutions, and create user-friendly
+                interfaces for monitoring environmental conditions.</p>
+          <div class="tech reveal">
+            <p class="reveal">Arduino, NodeMCU, DHT11, IoT</p>
           </div>
-          <div class="live-github">
-            <a href="https://portfolio-brijnandan-4216.netlify.app/"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-            <a href="https://github.com/BrijNandan101/portfolio1.git"><i class='bx bxl-github' ></i><span>GitHub Repository</span></a>
-          </div>
-        </div>
-        <div class="projects-details">
-          <p class="numb">05</p>
-          <h3>Habbit Tracker App Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quaerat!</p>
-          <div class="tech">
-            <p>Flutter</p>
-          </div>
-          <div class="live-github">
+          <div class="live-github reveal">
             <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-            <a href="#"><i class='bx bxl-github' ></i><span>GitHub Repository</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
           </div>
         </div>
-        <div class="projects-details">
-          <p class="numb">06</p>
-          <h3>Saas AI Platform Project</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quaerat!</p>
-          <div class="tech">
-            <p>React Js, Tailwind, My SQL, Clerk, Prisma</p>
+        <div class="projects-details reveal">
+          <p class="numb reveal">04</p>
+          <h3 class="reveal">Bone Fracture Imaging System</h3>
+          <p class="reveal">Developed a portable, non-invasive microwave imaging system to detect
+             bone fractures using Ultra-Wideband (UWB) Vivaldi antennas and microwave signal analysis.
+              Simulated antenna models in CST Studio and processed scattering signals using MATLAB
+               and Python to generate imaging results. Designed the system to operate at high frequencies
+                for effective tissue penetration and improved diagnostic accuracy. Demonstrated an
+                 innovative approach to medical imaging by integrating antenna design, signal processing,
+                  and hardware implementation with Arduino.</p>
+          <div class="tech reveal">
+            <p class="reveal">Python, MATLAB, Arduino, CST Studio, UWB antenna</p>
           </div>
-          <div class="live-github">
+          <div class="live-github reveal">
             <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
-            <a href="#"><i class='bx bxl-github' ></i><span>GitHub Repository</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+          </div>
+        </div>
+        <div class="projects-details reveal">
+          <p class="numb reveal">05</p>
+          <h3 class="reveal">Smart Irrigation System</h3>
+          <p class="reveal">Designed and implemented an IoT-based smart irrigation system that
+             automates water delivery based on real-time soil moisture, temperature, and humidity
+              readings. The system uses NodeMCU ESP8266, DHT11/22, and soil moisture sensors to
+               collect data and make intelligent watering decisions. Sensor data is transmitted
+                wirelessly and displayed via a web interface or IoT dashboard. This project
+                 promotes efficient water usage and supports precision agriculture through 
+                 low-cost automation.</p>
+          <div class="tech reveal">
+            <p class="reveal">IoT, Arduino, Sensors, NodeMCU, DHT11/22, Soil Moisture Sensor, Realy Module</p>
+          </div>
+          <div class="live-github reveal">
+            <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+          </div>
+        </div>
+        <div class="projects-details reveal">
+          <p class="numb reveal">06</p>
+          <h3 class="reveal">Netflix Clone</h3>
+          <p class="reveal">Developed a responsive Netflix-inspired front-end clone using React.js
+             to replicate core UI features like movie carousels, hero banners, and category
+              browsing. Designed with HTML5, CSS3, and JavaScript, the interface simulates user
+               experience with clean layouts, smooth transitions, and modern styling. The project 
+               demonstrates strong frontend design principles and component-based architecture.</p>
+          <div class="tech reveal">
+            <p class="reveal">React.js, HTML5, CSS3, JavaScript</p>
+          </div>
+          <div class="live-github reveal">
+            <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+          </div>
+        </div>
+        <div class="projects-details reveal">
+          <p class="numb reveal">07</p>
+          <h3 class="reveal">AI Assistant</h3>
+          <p class="reveal">Developed an AI-powered virtual assistant using Python and OpenAI AP
+            I capable of understanding user queries, performing system-level tasks, and responding
+             via voice output. The assistant integrates natural language processing and 
+             speech-to-text functionalities, allowing real-time interaction through both text 
+             and voice. This project demonstrates the integration of AI with user interface
+              components and voice-based automation.  </p>
+          <div class="tech reveal">
+            <p class="reveal">Python, Speech Recognition, OpenAI API</p>
+          </div>
+          <div class="live-github reveal">
+            <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+          </div>
+        </div>
+        <div class="projects-details reveal">
+          <p class="numb reveal">08</p>
+          <h3 class="reveal">Smart Attendance System</h3>
+          <p class="reveal">Automated attendance system using face recognition and cloud storage.</p>
+          <div class="tech reveal">
+            <p class="reveal">Python, OpenCV, Cloud</p>
+          </div>
+          <div class="live-github reveal">
+            <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+          </div>
+        </div>
+        <div class="projects-details reveal">
+          <p class="numb reveal">09</p>
+          <h3 class="reveal">Upcoming Project</h3>
+          <p class="reveal">Project details coming soon...</p>
+          <div class="tech reveal">
+            <p class="reveal">---</p>
+          </div>
+          <div class="live-github reveal">
+            <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+          </div>
+        </div>
+        <div class="projects-details reveal">
+          <p class="numb reveal">10</p>
+          <h3 class="reveal">Upcoming Project</h3>
+          <p class="reveal">Project details coming soon...</p>
+          <div class="tech reveal">
+            <p class="reveal">---</p>
+          </div>
+          <div class="live-github reveal">
+            <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
+          </div>
+        </div>
+        <div class="projects-details reveal">
+          <p class="numb reveal">11</p>
+          <h3 class="reveal">Upcoming Project</h3>
+          <p class="reveal">Project details coming soon...</p>
+          <div class="tech reveal">
+            <p class="reveal">---</p>
+          </div>
+          <div class="live-github reveal">
+            <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+            <a href="#"><i class='bx bxl-github'></i><span>GitHub Repository</span></a>
           </div>
         </div>
       </div>
-
-      <div class="projects-box">
-        <div class="projects-carousel">
-          <div class="img-slide">
-            <div class="img-item">
+      <div class="projects-box reveal">
+        <div class="projects-carousel reveal">
+          <div class="img-slide reveal">
+            <div class="img-item reveal">
               <img src="assets/resume2.png">
             </div>
-            <div class="img-item">
-              <img src="assets/iot.png">
+            <div class="img-item reveal">
+              <img src="assets/forgery.png">
             </div>
-            <div class="img-item">
-              <img src="assets/banking.png">
+            <div class="img-item reveal">
+              <img src="assets/temphumi.jpeg">
             </div>
-            <div class="img-item">
-              <img src="assets/portfolio1.png">
+            <div class="img-item reveal">
+              <img src="assets/bonefrac.jpeg">
             </div>
-            <div class="img-item">
-              <img src="assets/habbittracker.png">
+            <div class="img-item reveal">
+              <img src="assets/smartirri.jpeg">
             </div>
-            <div class="img-item">
-              <img src="assets/saasplatform.png">
+            <div class="img-item reveal">
+              <img src="assets/netflix.jpeg">
+            </div>
+            <div class="img-item reveal">
+              <img src="assets/ai-assistant-personalized.webp">
             </div>
           </div>
         </div>
-        <div class="navigation">
-          <button id="prev-btn" class="arrow-left"><i class='bx bx-chevron-left'></i></button>
-          <button id="next-btn" class="arrow-right"><i class='bx bx-chevron-right' ></i></button>
+        <div class="navigation reveal">
+          <button id="prev-btn" class="arrow-left reveal"><i class='bx bx-chevron-left'></i></button>
+          <button id="next-btn" class="arrow-right reveal"><i class='bx bx-chevron-right' ></i></button>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact">
-    <div class="contact-container">
-      <div class="contact-box">
-        <h2>Let's Work Together</h2>
-        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore.</p>
-        <div class="contact-detail">
+  <!-- =====================
+       7. Contact Section
+       ===================== -->
+  <section class="contact reveal">
+    <div class="contact-container reveal">
+      <div class="contact-box reveal">
+        <h2 class="reveal">Let's Work Together</h2>
+        <div class="contact-detail reveal">
           <i class='bx bxs-envelope'></i>
-          <div class="detail">
-            <p>Email</p>
-            <p>Brij14nandan99@gmail.com</p>
+          <div class="detail reveal">
+            <p class="reveal">Email</p>
+            <p class="reveal">Brij14nandan99@gmail.com</p>
           </div>
         </div>
-        <div class="contact-detail">
+        <div class="contact-detail reveal">
           <i class='bx bxs-map' ></i>
-          <div class="detail">
-            <p>Address</p>
-            <p>123 Anywhere Street, Anywhere City</p>
+          <div class="detail reveal">
+            <p class="reveal">Address</p>
+            <p class="reveal">Uttar Pradesh, India</p>
           </div>
         </div>
       </div>
-      <div class="contact-box">
-        <form action="">
-          <h2 class="heading">Contact <span>Me!</span></h2>
-          <div class="field-box">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="text" placeholder="Phone Number" required>
-            <input type="text" placeholder="Email Subject" required>
-            <textarea name="" id="" placeholder="Your Message" required></textarea>
+      <div class="contact-box reveal">
+        <form id="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+          <h2 class="heading reveal">Contact <span>Me!</span></h2>
+          <div class="field-box reveal">
+            <input type="text" placeholder="Full Name" required class="reveal" name="name">
+            <input type="email" placeholder="Email Address" required class="reveal" name="email">
+            <input type="text" placeholder="Phone Number" required class="reveal" name="phone">
+            <input type="text" placeholder="Email Subject" required class="reveal" name="subject">
+            <textarea name="message" id="" placeholder="Your Message" required class="reveal"></textarea>
           </div>
-          <button type="submit" class="btn">Send Message</button>
+          <button type="submit" class="btn reveal">Send Message</button>
         </form>
+        <div class="form-success-message" style="display:none; color:var(--main-color); font-size:1.5rem; margin-top:1.5rem; text-align:center;">Thank you! Your message has been sent.</div>
       </div>
     </div>
   </section>
 
+  <!-- =====================
+       8. Scripts
+       ===================== -->
   <script src="script.js"></script>
 </body>
 </html>
